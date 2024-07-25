@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-st.image(r"C:\Users\reddy\OneDrive\Desktop\new logo.jpg")
+st.image(r"new logo.jpg")
 ## Loading the trained model
 with open(r"model.pkl","rb") as file:
     model = pickle.load(file)
@@ -47,13 +47,13 @@ if st.button("Predict Weather Type"):
 
     if True:
         if prediction[0]== "Rainy":
-            st.image(r"C:\Users\reddy\OneDrive\Desktop\raining.jpg")
+            st.image(r"raining.jpg")
         elif prediction[0]=="Cloudy":
-            st.image(r"C:\Users\reddy\OneDrive\Desktop\cloudy.png")
+            st.image(r"cloudy.png")
         elif prediction[0]=="Sunny":
-            st.image(r"C:\Users\reddy\OneDrive\Desktop\sunny.jpg")
+            st.image(r"sunny.jpg")
         else:
-            st.image(r"C:\Users\reddy\OneDrive\Desktop\snowy.jpg")
+            st.image(r"snowy.jpg")
 
 
 
