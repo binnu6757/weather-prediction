@@ -4,7 +4,7 @@ import pickle
 
 st.image(r"C:\Users\reddy\OneDrive\Desktop\new logo.jpg")
 ## Loading the trained model
-with open(r"C:\Users\reddy\machine learning\model.pkl","rb") as file:
+with open(r"model.pkl","rb") as file:
     model = pickle.load(file)
 
 #Defining the Input fileds
